@@ -9,23 +9,21 @@
 </head>
 
 <body>
-  <nav id="drawer" class="nav">
+  <header class="header">
     <div class="projs">
-      <div>
-        <a href="index.html" ><img src="ERI_vertical_RGB.png" class="logo-image" ></a>
-      </div>
-      <div class="nav-right" id="mylinks">
-          <a href="index.html">Home</a>
-          <a href="publications.html" class="active">Publications</a>
-          <a href="cv.html">CV</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-      </div>
+    <a href="index.html" ><img src="ERI_vertical_RGB.png" class="logo-image" ></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
     </div>
-  </nav>
+  </header>
 
-  <div class="projs">
+  <div class="pubs">
+    <div class="pulldown">
     <h1>2022</h1>
     <ol>
         <li> <b>A. Mateus</b>, P. U. Lima, and P. Miraldo. An observer cascade for velocity and multiple
@@ -97,17 +95,8 @@
         [<a href="https://doi.org/10.1007/978-3-319-27146-0_22">doi</a>];
       </li>
     </ol>
+    </div>>
   </div>
      
-  <script>
-    function myFunction() {
-      var x = document.getElementById("mylinks");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
 </body>
 </html>
