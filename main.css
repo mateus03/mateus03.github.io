@@ -153,6 +153,7 @@ footer {
   padding-top: 56.25%;
   position: relative;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .iframe-container iframe {
    border: 0;
@@ -178,7 +179,7 @@ tr {
 
 .test{
   clear: both;
-  border-top: 2px solid #85ccff; 
+  border-top: 2px solid #85ccff;
 }
 
 /* @media only screen and (min-width: 2000px) {
