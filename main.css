@@ -92,8 +92,8 @@ image, embed, video, object {
 }
 
 .foto{
-  width:200px;
-  height: 326px;
+  width:300px;
+  height:200px;
   margin-top: 20px;
 }
 
@@ -128,7 +128,7 @@ footer {
 }
 
 .pulldown{
-  margin-top: 75px;
+  margin-top: 100px;
 }
 
 .leftTab{
@@ -209,8 +209,8 @@ tr {
   }
 
   .foto{
-    width: 175px;
-    height: 285px;
+    width: 285px;
+    height: 175px;
     margin-top: 10px;
   }
   
