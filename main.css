@@ -95,6 +95,14 @@ image, embed, video, object {
   width:300px;
   height:200px;
   margin-top: 20px;
+  border-radius: 8px;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.foto:hover {
+  transform: scale(1.05);
 }
 
 footer {
@@ -149,12 +157,16 @@ footer {
 
 .iframe-container {
   overflow: hidden;
-  /* 16:9 aspect ratio */
-  padding-top: 56.25%;
+  /* 16:9 aspect ratio
+  padding-top: 56.25%; */
+  height: 315px; /* Standard 16:9 YouTube height */
   position: relative;
   margin-bottom: 20px;
   margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
 .iframe-container iframe {
    border: 0;
    height: 100%;
@@ -164,8 +176,36 @@ footer {
    width: 100%;
 }
 
-#social-fb, #social-git, #social-you, #social-rg, #social-gs{
+.iframe-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: none;
+}
+
+
+/* #social-fb, #social-git, #social-you, #social-rg, #social-gs{
   color: #0050ca;
+} */
+
+:root {
+  --primary-color: #007BFF;
+  --secondary-color: #0056b3;
+}
+
+.social i {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.social i:hover {
+  color: var(--secondary-color);
+}
+
+/* Remove the inline spacing and add proper margins */
+.social a {
+  margin: 0 8px;
+  text-decoration: none;
 }
 
 table {
@@ -382,6 +422,10 @@ li:not(:last-child) {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.publication-card:hover {
+  transform: translateY(-5px);
+}
+
 .pubs li {
   margin: 1px 0;
   padding: 10px;
@@ -399,3 +443,28 @@ li:not(:last-child) {
   color: #0056b3;
 }
 
+.news {
+  background-color: #f2f2f2;
+  border-left: 4px solid #ff3232;
+  padding: 15px;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 20px 0;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.footer-links a:link{
+  color:#f2f2f2
+}
